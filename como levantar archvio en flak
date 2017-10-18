@@ -1,0 +1,28 @@
+alumno@betsy ~ $ workon env1
+(env1) alumno@betsy ~ $ vi flask.py
+(env1) alumno@betsy ~ $ ls -lrth
+total 48K
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Vídeos
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Público
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Plantillas
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Música
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Imágenes
+drwxr-xr-x 2 alumno alumno 4,0K abr  6 20:49 Documentos
+drwxr-xr-x 2 alumno alumno 4,0K jun  7 11:56 Descargas
+-rw-r--r-- 1 alumno alumno  415 ago 28 20:21 sesion.py
+drwxr-xr-x 7 alumno alumno 4,0K sep  2 13:50 Escritorio
+drwxr-xr-x 3 alumno alumno 4,0K sep 18 20:22 Envs
+drwxr-xr-x 2 alumno alumno 4,0K sep 18 21:20 __pycache__
+-rw-r--r-- 1 alumno alumno  246 sep 18 21:37 flask1.py
+(env1) alumno@betsy ~ $ cd P
+Plantillas/ Público/    
+(env1) alumno@betsy ~ $ nano flask1.py 
+(env1) alumno@betsy ~ $ export FLASK_APP=flask1.py
+(env1) alumno@betsy ~ $ flask run
+ * Serving Flask app "flask1"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [22/Sep/2017 20:32:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Sep/2017 20:32:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [22/Sep/2017 20:32:12] "GET /favicon.ico HTTP/1.1" 404 -
+       
+

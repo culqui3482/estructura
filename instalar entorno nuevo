@@ -1,0 +1,202 @@
+alumno@betsy ~ $ pip install virtualenvwrapper
+The program 'pip' is currently not installed.  To run 'pip' please ask your administrator to install the package 'python-pip'
+pip: command not found
+alumno@betsy ~ $ sudo apt-get install python-pip
+[sudo] password for alumno: 
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+Se instalarán los siguientes paquetes extras:
+  python-colorama python-distlib python-html5lib python-setuptools
+Paquetes sugeridos:
+  python-genshi
+Paquetes recomendados:
+  python-dev-all python-wheel
+Se instalarán los siguientes paquetes NUEVOS:
+  python-colorama python-distlib python-html5lib python-pip python-setuptools
+0 actualizados, 5 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
+Se necesita descargar 574 kB de archivos.
+Se utilizarán 2.470 kB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n] S
+Des:1 http://ftp.us.debian.org/debian/ jessie/main python-colorama all 0.3.2-1 [20,3 kB]
+Des:2 http://ftp.us.debian.org/debian/ jessie/main python-distlib all 0.1.9-1 [113 kB]
+Des:3 http://ftp.us.debian.org/debian/ jessie/main python-html5lib all 0.999-3 [84,0 kB]
+Des:4 http://ftp.us.debian.org/debian/ jessie/main python-setuptools all 5.5.1-1 [242 kB]
+Des:5 http://ftp.us.debian.org/debian/ jessie/main python-pip all 1.5.6-5 [114 kB]
+Descargados 574 kB en 21s (26,7 kB/s)                                          
+Seleccionando el paquete python-colorama previamente no seleccionado.
+(Leyendo la base de datos ... 173214 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../python-colorama_0.3.2-1_all.deb ...
+Desempaquetando python-colorama (0.3.2-1) ...
+Seleccionando el paquete python-distlib previamente no seleccionado.
+Preparando para desempaquetar .../python-distlib_0.1.9-1_all.deb ...
+Desempaquetando python-distlib (0.1.9-1) ...
+Seleccionando el paquete python-html5lib previamente no seleccionado.
+Preparando para desempaquetar .../python-html5lib_0.999-3_all.deb ...
+Desempaquetando python-html5lib (0.999-3) ...
+Seleccionando el paquete python-setuptools previamente no seleccionado.
+Preparando para desempaquetar .../python-setuptools_5.5.1-1_all.deb ...
+Desempaquetando python-setuptools (5.5.1-1) ...
+Seleccionando el paquete python-pip previamente no seleccionado.
+Preparando para desempaquetar .../python-pip_1.5.6-5_all.deb ...
+Desempaquetando python-pip (1.5.6-5) ...
+Procesando disparadores para man-db (2.7.0.2-5) ...
+Configurando python-colorama (0.3.2-1) ...
+Configurando python-distlib (0.1.9-1) ...
+Configurando python-html5lib (0.999-3) ...
+Configurando python-setuptools (5.5.1-1) ...
+Configurando python-pip (1.5.6-5) ...
+alumno@betsy ~ $ pip install virtualenvwrapper
+Downloading/unpacking virtualenvwrapper
+  Downloading virtualenvwrapper-4.8.2-py2.py3-none-any.whl
+Downloading/unpacking stevedore (from virtualenvwrapper)
+  Downloading stevedore-1.26.0-py2.py3-none-any.whl
+Downloading/unpacking virtualenv-clone (from virtualenvwrapper)
+  Downloading virtualenv-clone-0.2.6.tar.gz
+  Running setup.py (path:/tmp/pip-build-Py6ecX/virtualenv-clone/setup.py) egg_info for package virtualenv-clone
+    
+Downloading/unpacking virtualenv (from virtualenvwrapper)
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB): 1.8MB downloaded
+Downloading/unpacking six>=1.9.0 (from stevedore->virtualenvwrapper)
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Downloading/unpacking pbr>=2.0.0,!=2.1.0 (from stevedore->virtualenvwrapper)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB): 99kB downloaded
+Installing collected packages: virtualenvwrapper, stevedore, virtualenv-clone, virtualenv, six, pbr
+Cleaning up...
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 295, in run
+    requirement_set.install(install_options, global_options, root=options.root_path)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1436, in install
+    requirement.install(install_options, global_options, *args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 672, in install
+    self.move_wheel_files(self.source_dir, root=root)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 902, in move_wheel_files
+    pycompile=self.pycompile,
+  File "/usr/lib/python2.7/dist-packages/pip/wheel.py", line 214, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/usr/lib/python2.7/dist-packages/pip/wheel.py", line 208, in clobber
+    shutil.copy2(srcfile, destfile)
+  File "/usr/lib/python2.7/shutil.py", line 130, in copy2
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages/virtualenvwrapper-4.8.2-py2.7-nspkg.pth'
+
+Storing debug log for failure in /home/alumno/.pip/pip.log
+alumno@betsy ~ $ sudo pip install virtualenvwrapper
+Downloading/unpacking virtualenvwrapper
+  Downloading virtualenvwrapper-4.8.2-py2.py3-none-any.whl
+Downloading/unpacking stevedore (from virtualenvwrapper)
+  Downloading stevedore-1.26.0-py2.py3-none-any.whl
+Downloading/unpacking virtualenv-clone (from virtualenvwrapper)
+  Downloading virtualenv-clone-0.2.6.tar.gz
+  Running setup.py (path:/tmp/pip-build-TGSHPw/virtualenv-clone/setup.py) egg_info for package virtualenv-clone
+    
+Downloading/unpacking virtualenv (from virtualenvwrapper)
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB): 438kB downloaded
+Cleaning up...
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 290, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1198, in prepare_files
+    do_download,
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1376, in unpack_url
+    self.session,
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 572, in unpack_http_url
+    download_hash = _download_url(resp, link, temp_location)
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 433, in _download_url
+    for chunk in resp_read(4096):
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 421, in resp_read
+    chunk_size, decode_content=False):
+  File "/usr/lib/python2.7/dist-packages/urllib3/response.py", line 256, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/usr/lib/python2.7/dist-packages/urllib3/response.py", line 210, in read
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+ReadTimeoutError: HTTPSConnectionPool(host='pypi.python.org', port=443): Read timed out.
+
+Storing debug log for failure in /root/.pip/pip.log
+alumno@betsy ~ $ sudo pip install virtualenvwrapper
+Downloading/unpacking virtualenvwrapper
+  Cannot fetch index base URL https://pypi.python.org/simple/
+  Could not find any downloads that satisfy the requirement virtualenvwrapper
+Cleaning up...
+No distributions at all found for virtualenvwrapper
+Storing debug log for failure in /root/.pip/pip.log
+alumno@betsy ~ $ sudo pip install virtualenvwrapper
+Downloading/unpacking virtualenvwrapper
+  Downloading virtualenvwrapper-4.8.2-py2.py3-none-any.whl
+Downloading/unpacking stevedore (from virtualenvwrapper)
+  Downloading stevedore-1.26.0-py2.py3-none-any.whl
+Downloading/unpacking virtualenv-clone (from virtualenvwrapper)
+  Downloading virtualenv-clone-0.2.6.tar.gz
+  Running setup.py (path:/tmp/pip-build-9EV5WY/virtualenv-clone/setup.py) egg_info for package virtualenv-clone
+    
+Downloading/unpacking virtualenv (from virtualenvwrapper)
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB): 1.8MB downloaded
+Downloading/unpacking six>=1.9.0 (from stevedore->virtualenvwrapper)
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Downloading/unpacking pbr>=2.0.0,!=2.1.0 (from stevedore->virtualenvwrapper)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB): 99kB downloaded
+Installing collected packages: virtualenvwrapper, stevedore, virtualenv-clone, virtualenv, six, pbr
+  Running setup.py install for virtualenv-clone
+    
+    Installing virtualenv-clone script to /usr/local/bin
+  Found existing installation: six 1.8.0
+    Not uninstalling six at /usr/lib/python2.7/dist-packages, owned by OS
+Successfully installed virtualenvwrapper stevedore virtualenv-clone virtualenv six pbr
+Cleaning up...
+alumno@betsy ~ $ export WORKON_HOME=~/Envs
+alumno@betsy ~ $ mkdir -p $WORKON_HOME
+alumno@betsy ~ $ source /usr/local/bin/virtualenvwrapper.sh
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/premkproject
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/postmkproject
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/initialize
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/premkvirtualenv
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/postmkvirtualenv
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/prermvirtualenv
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/postrmvirtualenv
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/predeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/postdeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/preactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/postactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/get_env_details
+alumno@betsy ~ $ mkvirtualenv env1
+New python executable in /home/alumno/Envs/env1/bin/python
+Installing setuptools, pip, wheel...done.
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/predeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/postdeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/preactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/postactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/get_env_details
+(env1) alumno@betsy ~ $ deactivate
+alumno@betsy ~ $ workon-env1
+workon-env1: command not found
+alumno@betsy ~ $ workon env1
+(env1) alumno@betsy ~ $ mkvirtualen saraza
+mkvirtualen: command not found
+(env1) alumno@betsy ~ $ mkvirtualen hola
+mkvirtualen: command not found
+(env1) alumno@betsy ~ $ deactivate
+alumno@betsy ~ $ rmvirtualenv env1
+Removing env1...
+alumno@betsy ~ $ mkvirtualenv -p$(which python3) env1
+Running virtualenv with interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /home/alumno/Envs/env1/bin/python3
+Also creating executable in /home/alumno/Envs/env1/bin/python
+Installing setuptools, pip, wheel...
+done.
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/predeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/postdeactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/preactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/postactivate
+virtualenvwrapper.user_scripts creating /home/alumno/Envs/env1/bin/get_env_details
+(env1) alumno@betsy ~ $ 
+(env1) alumno@betsy ~ $ 
+

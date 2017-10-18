@@ -1,0 +1,76 @@
+env1) alumno@betsy ~ $ 
+(env1) alumno@betsy ~ $ deactivate
+alumno@betsy ~ $ workon env1
+(env1) alumno@betsy ~ $ pip install Flask
+Collecting Flask
+  Downloading Flask-0.12.2-py2.py3-none-any.whl (83kB)
+    100% |████████████████████████████████| 92kB 137kB/s 
+Collecting Werkzeug>=0.7 (from Flask)
+  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
+    100% |████████████████████████████████| 317kB 117kB/s 
+Collecting click>=2.0 (from Flask)
+  Downloading click-6.7-py2.py3-none-any.whl (71kB)
+    100% |████████████████████████████████| 71kB 101kB/s 
+Collecting Jinja2>=2.4 (from Flask)
+  Downloading Jinja2-2.9.6-py2.py3-none-any.whl (340kB)
+    100% |████████████████████████████████| 348kB 185kB/s 
+Collecting itsdangerous>=0.21 (from Flask)
+  Downloading itsdangerous-0.24.tar.gz (46kB)
+    100% |████████████████████████████████| 51kB 314kB/s 
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->Flask)
+  Downloading MarkupSafe-1.0.tar.gz
+Building wheels for collected packages: itsdangerous, MarkupSafe
+  Running setup.py bdist_wheel for itsdangerous ... done
+  Stored in directory: /home/alumno/.cache/pip/wheels/fc/a8/66/24d655233c757e178d45dea2de22a04c6d92766abfb741129a
+  Running setup.py bdist_wheel for MarkupSafe ... done
+  Stored in directory: /home/alumno/.cache/pip/wheels/88/a7/30/e39a54a87bcbe25308fa3ca64e8ddc75d9b3e5afa21ee32d57
+Successfully built itsdangerous MarkupSafe
+Installing collected packages: Werkzeug, click, MarkupSafe, Jinja2, itsdangerous, Flask
+Successfully installed Flask-0.12.2 Jinja2-2.9.6 MarkupSafe-1.0 Werkzeug-0.12.2 click-6.7 itsdangerous-0.24
+(env1) alumno@betsy ~ $ 
+
+------------------------------------------------------------------------------------------------------
+env1) alumno@betsy ~ $ vim flask.py  --- editor de texto !!!!!!!
+No command 'vim' found, did you mean:
+ Command 'vmm' from package 'vmm' (main)
+ Command 'aim' from package 'abinit' (main)
+ Command 'jvim' from package 'jvim-canna' (main)
+ Command 'vifm' from package 'vifm' (main)
+ Command 'vrm' from package 'atfs' (main)
+ Command 'vit' from package 'vit' (main)
+ Command 'vam' from package 'vim-addon-manager' (main)
+ Command 'zim' from package 'zim' (main)
+ Command 'vi' from package 'elvis-tiny' (main)
+ Command 'vm' from package 'mgetty-voice' (main)
+ Command 'vwm' from package 'vmware-manager' (contrib)
+ Command 'vym' from package 'vym' (main)
+vim: command not found
+(env1) alumno@betsy ~ $ vi flask.py1
+(env1) alumno@betsy ~ $ nano flask1.py !!!!! mejor editor de texto es  nano. flask.py (nombre del archivo)
+(env1) alumno@betsy ~ $ nano flask1.py
+(env1) alumno@betsy ~ $ export FLASK_APP=flask1.py -----> como subir el archivo  en el navegador
+(env1) alumno@betsy ~ $ flask run ----> me va a tirar la direccion de la pagian 
+ * Serving Flask app "flask1"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ---->>>>> ruta es 127.0.0.1:5000/
+127.0.0.1 - - [18/Sep/2017 21:20:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2017 21:21:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [18/Sep/2017 21:21:00] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
